@@ -7,6 +7,7 @@ from typing import Dict
 from fastapi import Cookie
 from fastapi import Header
 
+
 # 创建 FastAPI 实例
 app = FastAPI(title="智能招聘系统", version="1.0.0")
 

@@ -4,7 +4,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import MetaData
 
-DB_URI = "postgresql+psycopg_async://postgres:8989100@127.0.0.1:5432/mydb"
+
+DB_URI = "postgresql+psycopg_async://rick_van:8989100@127.0.0.1:5432/mydb"
 engine = create_async_engine(
     DB_URI,
     # 将输出所有执行SQL的日志（默认是关闭的）
@@ -49,3 +50,4 @@ class Base(DeclarativeBase):
         # pk: 主键约束，格式为 pk_表名
         "pk": "pk_%(table_name)s"
     })
+
